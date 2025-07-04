@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="weather.css" />
+  <script src="https://kit.fontawesome.com/a079584e20.js" crossorigin="anonymous"></script>
+  <title>Weather App</title>
+</head>
+<body>
+  <div id="first_page">
+    <h1 id="title">Weather App</h1>
+    <div id="main">
+      <div id="city">
+        <input type="text" id="cityNameInput" placeholder="Enter Your Location..." />
+        <i class="fa-solid fa-magnifying-glass" id="goToSecondPage"></i>
+      </div>
+    </div>
+  </div>
+  <div id="second_page">
+    <div class="weather-card">
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="City Name" />
+        <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+      </div>
+
+      <div id="weatherData">
+        <img src="" alt="weather-icon" class="weather-icon" id="weatherIcon" />
+
+        <div class="temperature" id="temperature">--°C</div>
+        <div class="condition" id="condition">--</div>
+
+        <div class="extra-info">
+          <div>
+            <i class="fa-solid fa-droplet"></i>
+            <span id="humidity">--%</span>
+            <small>Humidity</small>
+          </div>
+          <div>
+            <i class="fa-solid fa-wind"></i>
+            <span id="wind">--Km/H</span>
+            <small>Wind Speed</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="weather.js"></script>
+</body>
+</html>
